@@ -7,7 +7,7 @@ import unittest
 try:
     import mock
 except ImportError:
-    from unittest import mock
+    from unittest.mock import mock
 
 
 from fs.base import FS
