@@ -7,7 +7,7 @@ environment:
     # The list here is complete (excluding Python 2.6, which
     # isn't covered by this document) at the time of writing.
 
-    - PYTHON: "C:\\Python27"
+    #- PYTHON: "C:\\Python27"
     #- PYTHON: "C:\\Python33"
     - PYTHON: "C:\\Python36-x64"
     #- PYTHON: "C:\\Python35"
@@ -26,6 +26,7 @@ install:
   - "%PYTHON%\\python.exe -m pip install pytest-cov"
   - "%PYTHON%\\python.exe -m pip install pytest-pep8"
   - "%PYTHON%\\python.exe -m pip install -e ."
+  - "%PYTHON%\\python.exe -m pip install -r testrequirements.txt"
   
 build: off
 
