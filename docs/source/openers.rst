@@ -35,3 +35,4 @@ To open a filesysem with a FS URL, you can use :meth:`~fs.opener.Registry.open_f
 
     from fs import open_fs
     projects_fs = open_fs('osfs://~/projects')
+
